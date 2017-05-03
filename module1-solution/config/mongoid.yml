@@ -1,0 +1,20 @@
+production:
+  clients:
+    default:
+      uri: <%= ENV['MLAB_URI'] %>
+development:
+  clients:
+    default:
+      database: myapp_development
+      hosts:
+        - <%= ENV['MONGO_HOST'] %>
+test:
+  clients:
+    default:
+      database: myapp_test
+      hosts:
+        - <%= ENV['MONGO_HOST'] %>
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
