@@ -1,6 +1,6 @@
-####Assignment: Module #4 - Secure Information
+Assignment: Module #4 - Secure Information
 
-##Objective
+Objective
 
 By the end of this assignment, you will be able to:
 
@@ -20,7 +20,7 @@ General user account/role rules:
 
 • Mike and Carol are application-wide administrators • Alice is your first choice as an originator that remains an organizer. Carol is an alternate choice for this type of user. • Greg and Marsha are your first choices for organizers that are not originators • Jan, Cindy, Peter, and Bobby are candidates for pre-assigned members. • Sam should not have any special roles. Login is the best he can do.
 
-##Requirements (310 min)
+Requirements (310 min)
 
 (0min – assumes you have been following along with lectures) You are required to start with the security-assignment tag from the course example and make you changes from there. If you are not using Asset Pipeline, then you may copy the course examples from the Asset Pipeline area into your development area of choice and work from that point (from a Git perspective, it is just a movement of files). $ git clone https://github.com/jhu-ep-coursera/capstone_demoapp.git security-assignment $ cd security-assignment $ git checkout security-assignment You are in 'detached HEAD' state ... $ git checkout -b getting-started Switched to a new branch 'getting-started' $ git remote add staging https://git.heroku.com/abc-123.git #your staging repository $ git push --force staging getting-started:master $ heroku run rake db:migrate --remote staging $ heroku run rake ptourist:reset_all --remote staging $ heroku restart --remote staging
 
@@ -40,7 +40,7 @@ General user account/role rules:
 
 Optional Implement and end-to-end Capybara/feature spec that tests/mimics the actions you want your peer grader to follow. You can create more spec files, but this should be one targeted at honing in one what they minimally need to do when evaluating your solution. • the ability to list resource instances of your new resource(s) • the ability to view a resource instance of your new resource(s) • the ability to modify an instance of your new resource(s)
 
-##Options
+Options
 
 You are to chose one of the following options to implement in this assignment. You do not need to implement the entire capability to receive full credit. Just authorized access to a single index, show, and modify action is the intent here. Anything else should be added outside of the scope of the assignment. Use your imagination. There is nothing firm that any of these options require except that the solution must include a flavor of access control based on authentication, application roles, and and instance roles.
 
@@ -57,7 +57,7 @@ Option: Trip Logs Implement a means for a Tour Guide to create a Trip (e.g., a s
 
 Option: Role Editor Implement a means to manage roles for Things. The course example focuses on automatic organizer roles for creators and the enforcement of roles. However, it does not provide for the runtime assignment of roles like Thing member. Example Solution Choices: * List * Members can list the complete member list of their Thing * Admin role can see a list of all user accounts * View * Admin role can see what roles a user has * Modify * Admin role can assign originator roles to resource types (e.g., Thing) * Organizers can modify member assignments to their Thing * Organizers can modify organizer assignments to their Thing
 
-##Rubric
+Rubric
 
 Identify which assignment option you implemented and describe what the peer grader will be able to do with the enhancement relative to the rubric requirements. Feel free to boast but focus on what the peer grader needs to know first. • (5) Which assignment option did they pick?
 
